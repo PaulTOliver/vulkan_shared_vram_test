@@ -1,0 +1,27 @@
+:notion: https://www.notion.so/Emu-frame-GPU-transport-exploration-5a46a771617442ecacff6cdd521536b8
+
+=== GPU multiprocess data sharing with Vulkan
+
+This repo is a proof of concept to test what would it take to share VRAM data
+among different processes.
+
+To run code on this repo, set up your development environment by running:
+[source,bash]
+----
+./setup.sh
+----
+Or follow https://vulkan-tutorial.com/Development_environment#page_Linux[this]
+tutorial.
+
+To run the writer app do:
+[source,bash]
+----
+make all
+./writer
+# follow instructions to communicate with reader app...
+----
+
+==== Resources
+. https://vulkan-tutorial.com/[Vulkan tutorial]
+. https://github.com/KhronosGroup/Vulkan-Guide/blob/main/chapters/extensions/external.adoc[VRAM sharing extension guide]
+. https://stackoverflow.com/a/65939206[SO discussion about VRAM sharing]
